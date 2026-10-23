@@ -2,9 +2,36 @@ name: Bug report
 description: Report a reproducible bug in the backend or frontend.
 title: 'Bug: '
 body:
+  - type: markdown
+    attributes:
+      value: Help us reproduce the problem. Fields marked with an asterisk are required.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Where does the problem occur?
+      options:
+        - Backend
+        - Frontend
+        - Both
+        - Repository or tooling
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
+      description: Briefly describe the bug and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the page or API endpoint, input data and commands needed.
+      placeholder: |
+        1. Open the page or send the request...
+        2. Enter the following data...
+        3. Observe the problem...
     validations:
       required: true
