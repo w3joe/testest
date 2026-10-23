@@ -5,18 +5,6 @@ body:
   - type: markdown
     attributes:
       value: Help us reproduce the problem. Fields marked with an asterisk are required.
-  - type: dropdown
-    id: area
-    attributes:
-      label: Affected area
-      description: Where does the problem occur?
-      options:
-        - Backend
-        - Frontend
-        - Both
-        - Repository or tooling
-    validations:
-      required: true
   - type: textarea
     id: description
     attributes:

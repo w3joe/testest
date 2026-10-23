@@ -5,18 +5,6 @@ body:
   - type: markdown
     attributes:
       value: Tell us what you would like to improve. Fields marked with an asterisk are required.
-  - type: dropdown
-    id: area
-    attributes:
-      label: Affected area
-      description: Which part of the project would change?
-      options:
-        - Backend
-        - Frontend
-        - Both
-        - Repository or tooling
-    validations:
-      required: true
   - type: textarea
     id: description
     attributes:
