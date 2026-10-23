@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose a feature or improvement for the backend or frontend.
+title: 'Feature: '
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem or motivation
+      description: Explain the problem, who it affects and why it needs to be addressed.
+    validations:
+      required: true
