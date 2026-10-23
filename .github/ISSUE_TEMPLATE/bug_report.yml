@@ -1,0 +1,10 @@
+name: Bug report
+description: Report a reproducible bug in the backend or frontend.
+title: 'Bug: '
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
