@@ -35,3 +35,33 @@ body:
         3. Observe the problem...
     validations:
       required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What happens instead? Include any error messages.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Complete the relevant details. Use N/A for anything that does not apply.
+      placeholder: |
+        Branch and commit:
+        Operating system:
+        Java and Maven versions (backend):
+        Node.js and npm versions (frontend):
+        Browser and version (frontend):
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Paste relevant logs or attach screenshots. Remove credentials and personal data.
