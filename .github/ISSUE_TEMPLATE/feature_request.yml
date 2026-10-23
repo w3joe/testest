@@ -2,10 +2,26 @@ name: Feature request
 description: Propose a feature or improvement for the backend or frontend.
 title: 'Feature: '
 body:
+  - type: markdown
+    attributes:
+      value: Tell us what you would like to improve. Fields marked with an asterisk are required.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Which part of the project would change?
+      options:
+        - Backend
+        - Frontend
+        - Both
+        - Repository or tooling
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
+      description: Summarise the feature or improvement.
     validations:
       required: true
   - type: textarea
@@ -15,3 +31,32 @@ body:
       description: Explain the problem, who it affects and why it needs to be addressed.
     validations:
       required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed feature
+      description: Describe the intended behaviour and any backend or frontend changes.
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Suggest concrete implementation steps, if known. Use Markdown checkboxes.
+      placeholder: |
+        - [ ] First implementation step
+        - [ ] Next implementation step
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes that show the feature is complete.
+      placeholder: |
+        - [ ] Expected outcome
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope
+      description: List work excluded from this issue, or write None.
